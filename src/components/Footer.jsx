@@ -27,8 +27,8 @@ const Footer = () => {
           <div className="text-xs text-warm-gray/40">1945 — 2026</div>
         </div>
 
-        <p className="text-[10px] text-warm-gray/20 mt-12">
-          © 2026 The Koskei Family
+        <p className="text-[14px] text-warm-gray/50 mt-12">
+          © 2026 Blackmark Solutions. 0758 997 669
         </p>
       </div>
     </footer>
