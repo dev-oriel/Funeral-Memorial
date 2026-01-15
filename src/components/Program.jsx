@@ -2,7 +2,7 @@ import React from "react";
 
 const ProgramItem = ({ time, title, desc }) => (
   <div className="relative pl-8 md:pl-10">
-    <div className="absolute left-0 top-1.5 w-[20px] h-[20px] rounded-full bg-white dark:bg-background-dark border-2 border-primary flex items-center justify-center z-10">
+    <div className="absolute left-0 top-1.5 w-5 h-5 rounded-full bg-white dark:bg-background-dark border-2 border-primary flex items-center justify-center z-10">
       <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
     </div>
     <span className="text-xs font-bold text-primary block mb-1 uppercase tracking-wider">
@@ -23,7 +23,7 @@ const Program = () => {
       className="py-16 md:py-24 bg-primary/5 dark:bg-background-dark/50"
       id="program"
     >
-      <div className="max-w-[1000px] mx-auto px-4 md:px-6">
+      <div className="max-w-250 mx-auto px-4 md:px-6">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="serif-text text-3xl md:text-4xl font-bold mb-4">
             Funeral Program
@@ -40,7 +40,7 @@ const Program = () => {
             </h3>
             <div className="space-y-8 relative">
               {/* Vertical Line */}
-              <div className="absolute left-[9px] top-2 bottom-2 w-0.5 bg-primary/20"></div>
+              <div className="absolute left-2.25 top-2 bottom-2 w-0.5 bg-primary/20"></div>
 
               <ProgramItem
                 time="10:00 AM"
@@ -73,7 +73,7 @@ const Program = () => {
             </h3>
             <div className="space-y-8 relative">
               {/* Vertical Line */}
-              <div className="absolute left-[9px] top-2 bottom-2 w-0.5 bg-primary/20"></div>
+              <div className="absolute left-2.25 top-2 bottom-2 w-0.5 bg-primary/20"></div>
 
               <ProgramItem
                 time="9:00 AM"

@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="bg-background-light dark:bg-background-dark py-12 md:py-16 text-center border-t border-primary/20 mt-8">
       <div className="max-w-xl mx-auto px-6">
-        <div className="text-primary mb-6 animate-bounce duration-[3000ms]">
+        <div className="text-primary mb-6 animate-bounce duration-3000">
           <span className="material-symbols-outlined text-5xl">
             nature_people
           </span>

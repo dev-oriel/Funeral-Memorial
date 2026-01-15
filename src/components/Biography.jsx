@@ -6,7 +6,7 @@ const Biography = () => {
       className="py-16 md:py-24 border-b border-primary/10 px-4 md:px-6"
       id="biography"
     >
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-300 mx-auto">
         <h2 className="serif-text text-3xl md:text-4xl font-bold mb-12 md:mb-16 text-center">
           A Journey of Purpose
         </h2>
@@ -16,7 +16,7 @@ const Biography = () => {
           <div className="space-y-12">
             {/* Timeline Item 1 */}
             <div className="relative pl-8 border-l-2 border-primary/20">
-              <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary shadow-[0_0_0_4px_rgba(173,157,118,0.2)]"></div>
+              <div className="absolute -left-2.25 top-0 w-4 h-4 rounded-full bg-primary shadow-[0_0_0_4px_rgba(173,157,118,0.2)]"></div>
               <h3 className="text-xl font-bold mb-3 text-warm-gray dark:text-white">
                 Early Life & Roots
               </h3>
@@ -31,7 +31,7 @@ const Biography = () => {
 
             {/* Timeline Item 2 */}
             <div className="relative pl-8 border-l-2 border-primary/20">
-              <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary shadow-[0_0_0_4px_rgba(173,157,118,0.2)]"></div>
+              <div className="absolute -left-2.25 top-0 w-4 h-4 rounded-full bg-primary shadow-[0_0_0_4px_rgba(173,157,118,0.2)]"></div>
               <h3 className="text-xl font-bold mb-3 text-warm-gray dark:text-white">
                 Education & Service
               </h3>
@@ -45,7 +45,7 @@ const Biography = () => {
 
             {/* Timeline Item 3 */}
             <div className="relative pl-8 border-l-2 border-primary/20">
-              <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary shadow-[0_0_0_4px_rgba(173,157,118,0.2)]"></div>
+              <div className="absolute -left-2.25 top-0 w-4 h-4 rounded-full bg-primary shadow-[0_0_0_4px_rgba(173,157,118,0.2)]"></div>
               <h3 className="text-xl font-bold mb-3 text-warm-gray dark:text-white">
                 Family Life
               </h3>

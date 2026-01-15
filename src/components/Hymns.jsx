@@ -3,7 +3,7 @@ import React from "react";
 const Hymns = () => {
   return (
     <section
-      className="py-16 md:py-24 px-4 md:px-6 max-w-[800px] mx-auto"
+      className="py-16 md:py-24 px-4 md:px-6 max-w-200 mx-auto"
       id="hymns"
     >
       <h2 className="serif-text text-3xl md:text-4xl font-bold mb-10 text-center">

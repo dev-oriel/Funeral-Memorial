@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <section className="pt-8 pb-16 md:py-24 px-4 md:px-6">
-      <div className="relative overflow-hidden rounded-2xl bg-primary/5 min-h-[500px] md:min-h-[600px] flex flex-col items-center justify-center p-6 md:p-12 text-center border border-primary/10 max-w-[1200px] mx-auto shadow-sm">
+      <div className="relative overflow-hidden rounded-2xl bg-primary/5 min-h-125 md:min-h-150 flex flex-col items-center justify-center p-6 md:p-12 text-center border border-primary/10 max-w-300 mx-auto shadow-sm">
         {/* Background Image with Overlay */}
         <div
           className="absolute inset-0 opacity-15 pointer-events-none bg-cover bg-center grayscale"

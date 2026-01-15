@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Biography from "./components/Biography";
 import Program from "./components/Program";
 import Hymns from "./components/Hymns";
+import Gallery from "./components/Gallery"; // <--- Import this
 import Tributes from "./components/Tributes";
 import Footer from "./components/Footer";
 
@@ -16,6 +17,7 @@ function App() {
         <Biography />
         <Program />
         <Hymns />
+        <Gallery /> {/* <--- Add this line */}
         <Tributes />
       </main>
       <Footer />

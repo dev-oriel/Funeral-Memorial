@@ -2,11 +2,11 @@ import React, { useState } from "react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const navLinks = ["Biography", "Program", "Hymns", "Tributes"];
+  const navLinks = ["Biography", "Program", "Hymns", "Gallery", "Tributes"];
 
   return (
     <header className="sticky top-0 z-50 bg-background-light/95 dark:bg-background-dark/95 backdrop-blur-md border-b border-primary/10 px-4 md:px-10 lg:px-40 py-4 transition-all duration-300">
-      <div className="max-w-[1200px] mx-auto">
+      <div className="max-w-300 mx-auto">
         <div className="flex items-center justify-between">
           {/* Logo Section */}
           <div className="flex items-center gap-3 shrink-0">
@@ -31,9 +31,6 @@ const Navbar = () => {
                 {item}
               </a>
             ))}
-            <button className="bg-primary text-white text-xs font-bold py-2.5 px-6 rounded-lg hover:bg-primary/90 hover:shadow-md transition-all uppercase tracking-widest cursor-pointer">
-              Condolences
-            </button>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -61,9 +58,6 @@ const Navbar = () => {
                 {item}
               </a>
             ))}
-            <button className="bg-primary text-white text-sm font-bold py-3 rounded-lg mt-2 w-full uppercase tracking-widest shadow-sm">
-              Share Condolences
-            </button>
           </nav>
         )}
       </div>
