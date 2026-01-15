@@ -1,42 +1,47 @@
 import React from "react";
 
-// Helper component for individual timeline items
 const ProgramItem = ({ time, title, desc }) => (
-  <div className="relative pl-10">
-    <div className="absolute left-0 top-1 w-6 h-6 rounded-full bg-white dark:bg-background-dark border-2 border-primary flex items-center justify-center">
-      <div className="w-2 h-2 bg-primary rounded-full"></div>
+  <div className="relative pl-8 md:pl-10">
+    <div className="absolute left-0 top-1.5 w-[20px] h-[20px] rounded-full bg-white dark:bg-background-dark border-2 border-primary flex items-center justify-center z-10">
+      <div className="w-1.5 h-1.5 bg-primary rounded-full"></div>
     </div>
     <span className="text-xs font-bold text-primary block mb-1 uppercase tracking-wider">
       {time}
     </span>
-    <h4 className="font-bold text-warm-gray dark:text-gray-200">{title}</h4>
-    <p className="text-sm text-warm-gray/60 dark:text-gray-400">{desc}</p>
+    <h4 className="font-bold text-warm-gray dark:text-gray-100 text-base md:text-lg leading-tight mb-1">
+      {title}
+    </h4>
+    <p className="text-sm text-warm-gray/60 dark:text-gray-400 leading-normal">
+      {desc}
+    </p>
   </div>
 );
 
 const Program = () => {
   return (
     <section
-      className="py-20 bg-primary/5 dark:bg-background-dark/50"
+      className="py-16 md:py-24 bg-primary/5 dark:bg-background-dark/50"
       id="program"
     >
-      <div className="max-w-250 mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="serif-text text-3xl font-bold mb-4">
+      <div className="max-w-[1000px] mx-auto px-4 md:px-6">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="serif-text text-3xl md:text-4xl font-bold mb-4">
             Funeral Program
           </h2>
-          <div className="w-24 h-1 bg-primary mx-auto"></div>
+          <div className="w-20 h-1.5 bg-primary mx-auto rounded-full opacity-60"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
-          {/* Day 1: Thursday */}
-          <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-primary/10">
-            <h3 className="text-primary font-bold text-lg mb-8 uppercase tracking-widest flex items-center gap-2 border-b border-primary/10 pb-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          {/* Day 1 Card */}
+          <div className="bg-white dark:bg-gray-900/80 p-6 md:p-8 rounded-2xl shadow-sm border border-primary/10 hover:border-primary/30 transition-colors">
+            <h3 className="text-primary font-bold text-lg mb-8 uppercase tracking-widest flex items-center gap-3 border-b border-primary/10 pb-4">
               <span className="material-symbols-outlined">calendar_today</span>{" "}
               Thu, Jan 15th
             </h3>
             <div className="space-y-8 relative">
-              <div className="absolute left-2.75 top-2 bottom-0 w-px bg-primary/20"></div>
+              {/* Vertical Line */}
+              <div className="absolute left-[9px] top-2 bottom-2 w-0.5 bg-primary/20"></div>
+
               <ProgramItem
                 time="10:00 AM"
                 title="Assembly"
@@ -60,14 +65,16 @@ const Program = () => {
             </div>
           </div>
 
-          {/* Day 2: Friday */}
-          <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-sm border border-primary/10">
-            <h3 className="text-primary font-bold text-lg mb-8 uppercase tracking-widest flex items-center gap-2 border-b border-primary/10 pb-4">
+          {/* Day 2 Card */}
+          <div className="bg-white dark:bg-gray-900/80 p-6 md:p-8 rounded-2xl shadow-sm border border-primary/10 hover:border-primary/30 transition-colors">
+            <h3 className="text-primary font-bold text-lg mb-8 uppercase tracking-widest flex items-center gap-3 border-b border-primary/10 pb-4">
               <span className="material-symbols-outlined">event_available</span>{" "}
               Fri, Jan 16th
             </h3>
             <div className="space-y-8 relative">
-              <div className="absolute left-2.75 top-2 bottom-0 w-px bg-primary/20"></div>
+              {/* Vertical Line */}
+              <div className="absolute left-[9px] top-2 bottom-2 w-0.5 bg-primary/20"></div>
+
               <ProgramItem
                 time="9:00 AM"
                 title="Family Prayers"

@@ -1,1 +1,22 @@
+/* src/index.css */
 @import "tailwindcss";
+
+/* Define your custom theme variables here */
+@theme {
+  /* 1. COLORS */
+  /* These map automatically to utility classes like bg-primary, text-warm-gray */
+  --color-primary: #ad9d76;
+  --color-background-light: #fbfaf9;
+  --color-background-dark: #1c1a16;
+  --color-warm-gray: #33363B;
+
+  /* 2. FONTS */
+  /* These map to font-display and font-serif */
+  --font-display: "Manrope", sans-serif;
+  --font-serif: "Noto Serif", serif;
+
+  /* 3. DARK MODE */
+  /* Tailwind v4 supports dark mode by default. 
+     You don't need to configure "class" mode specifically here; 
+     it will automatically work if you toggle the "dark" class on the <html> tag. */
+}
